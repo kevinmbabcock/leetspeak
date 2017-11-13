@@ -9,4 +9,7 @@ describe('leetspeak') do
   it("all letter o will be changed to 0") do
     expect(leetspeak("hello")).to(eq("h3ll0"))
   end
+  it("all I are replaced with 1") do
+    expect(leetspeak("Initial")).to(eq("1nitial"))
+  end
 end

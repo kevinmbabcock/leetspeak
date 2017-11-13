@@ -8,7 +8,9 @@ def leetspeak(word)
     if (letter == "o" || letter == "O")
       letter.replace("0")
     end
-
+    if (letter == "I")
+      letter.replace("1")
+    end
   end
   word_split.join("")
 end
