@@ -11,6 +11,9 @@ def leetspeak(word)
     if (letter == "I")
       letter.replace("1")
     end
+    if (letter == "s")
+      letter.replace("z")
+    end
   end
   word_split.join("")
 end
