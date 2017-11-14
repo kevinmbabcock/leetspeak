@@ -15,4 +15,10 @@ describe('leetspeak') do
   it("all s are turned into z") do
     expect(leetspeak("dogs")).to(eq("d0gz"))
   end
+  it("accept arguments with multiple words") do
+    expect(leetspeak("Initial leave hello dogs")).to(eq("1nitial l3av3 h3ll0 d0gz"))
+  end
+  it("all first letter s are left as s") do
+    expect(leetspeak("soles")).to(eq("s0l3z"))
+  end
 end
