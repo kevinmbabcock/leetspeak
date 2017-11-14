@@ -21,4 +21,7 @@ describe('leetspeak') do
   it("all first letter s are left as s") do
     expect(leetspeak("soles")).to(eq("s0l3z"))
   end
+  it("test the epicodus example") do
+    expect(leetspeak("Don't you love these String exercises? I do!")).to(eq("D0n't y0u l0v3 th3z3 String 3x3rciz3z? 1 d0!"))
+  end
 end
